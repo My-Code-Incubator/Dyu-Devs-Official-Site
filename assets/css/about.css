@@ -1,0 +1,86 @@
+.about-us-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.title {
+    text-align: center;
+    margin-top: 10px;
+    background-color: #f0f0f0;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+
+}
+
+.about-column {
+    flex: 1 1 calc(33.33% - 20px);
+    margin: 10px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-column:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.about-column h2 {
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.read-more-button {
+    border-radius: 50%;
+    padding: 20px;
+    cursor: pointer;
+    background-color: #50a8db;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the button */
+.read-more-button:hover {
+    background-color: #4a94c3;
+    transform: scale(1.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation for the transform effect */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.read-more-button:hover {
+    animation: pulse 1s infinite;
+}
+
+@media screen and (max-width: 768px) {
+    .about-column {
+        flex: 0 0 calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about-column {
+        flex: 0 0 100%;
+    }
+}

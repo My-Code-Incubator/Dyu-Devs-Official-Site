@@ -1,167 +1,201 @@
-@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap");
 
 body {
-    margin: 0;
-    box-sizing: border-box;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
 }
 
 /* header */
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #f5f5f5;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #f5f5f5;
 }
 
 .header .logo {
-    font-size: 40px;
-    font-family: 'Sriracha', cursive;
-    color: #000;
-    text-decoration: none;
-    margin-left: 30px;
+	font-size: 40px;
+	font-family: "Sriracha", cursive;
+	color: #000;
+	text-decoration: none;
+	margin-left: 30px;
 }
 
 .nav-items {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #f5f5f5;
-    margin-right: 20px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #f5f5f5;
+	margin-right: 20px;
 }
 
 .nav-items a {
-    text-decoration: none;
-    color: rgba(66, 1, 119, 0.685);
-    padding: 35px 20px;
+	text-decoration: none;
+	color: rgba(66, 1, 119, 0.685);
+	padding: 35px 20px;
 }
 
-/*main  */
-.intro {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 90vh;
-    background: linear-gradient(to bottom, rgba(53, 89, 247, 0.685) 0%, rgba(66, 1, 119, 0.685) 100%), url("https://www.istockphoto.com/photo/aerial-over-north-carolina-central-university-in-the-spring-gm1323420737-409074838?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_top&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fcollege-campus&utm_term=college%20campus%3A%3A%3A");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
+/*hero section */
+#hero-body {
+	margin-top: 20px;
+	height: 20%;
+	padding: 10px;
+	overflow-y: auto;
+	color: #000;
 }
 
-.intro h1 {
-    font-family: sans-serif;
-    font-size: 60px;
-    color: #fff;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin: 0;
+.hero {
+	display: grid;
+	grid-template-columns: 3fr 2fr;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(
+			to bottom,
+			rgba(53, 89, 247, 0.2) 0%,
+			rgba(66, 1, 119, 0.2) 100%
+		),
+		url("background-full.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
-.intro p {
-    font-size: 20px;
-    color: #d1d1d1;
-    text-transform: uppercase;
-    margin: 20px 0;
+/* left column of hero-section */
+.hero .hero-left .intro {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: start;
+	padding: 10px;
 }
 
-.intro button {
-    background-color: #80e8fa;
-    color: #000;
-    padding: 10px 25px;
-    border: none;
-    border-radius: 5px;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4)
+.hero .hero-left .intro h1 {
+	font-family: sans-serif;
+	font-size: 60px;
+	color: #000;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+.hero .hero-left .intro p {
+	font-size: 20px;
+	color: #d1d1d1;
+	text-transform: uppercase;
+	margin: 20px 0;
+}
+
+.hero .hero-left .intro button {
+	margin-top: 30px;
+	background: linear-gradient(
+		to right,
+		rgba(53, 89, 247, 0.685) 0%,
+		rgba(66, 1, 119, 0.685) 100%
+	);
+	color: #fff;
+	padding: 15px 25px;
+	border: none;
+	border-radius: 50px;
+	font-size: 20px;
+	font-weight: bold;
+	cursor: pointer;
+	box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4);
+	transition: 1.5s;
+}
+
+.hero .hero-left .intro button:hover {
+	cursor: pointer;
+	color: #fff;
+	box-shadow: 0px 0px 20px rgba(87, 52, 107, 0.6);
 }
 
 /* About Us Section */
+
 .about-us-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: #f0f0f0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 20px;
+	background-color: #f0f0f0;
 }
 
 .title {
-    text-align: center;
-    margin-top: 10px;
-    background-color: #f0f0f0;
-    font-size: 30px;
-    text-transform: uppercase;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-
+	text-align: center;
+	margin-top: 10px;
+	background-color: #f0f0f0;
+	font-size: 30px;
+	text-transform: uppercase;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .about-column {
-    flex: 1 1 calc(33.33% - 20px);
-    margin: 10px;
-    background-color: #fff;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+	flex: 1 1 calc(33.33% - 20px);
+	margin: 10px;
+	background-color: #fff;
+	padding: 20px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	text-align: center;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .about-column:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+	transform: scale(1.05);
+	box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
 .about-column h2 {
-    font-size: 20px;
-    margin-top: 0;
+	font-size: 20px;
+	margin-top: 0;
 }
 
 .read-more-button {
-    border-radius: 50%;
-    padding: 20px;
-    cursor: pointer;
-    background-color: #50a8db;
-    transition: background-color 0.3s ease;
+	border-radius: 50%;
+	padding: 20px;
+	cursor: pointer;
+	background-color: #50a8db;
+	transition: background-color 0.3s ease;
 }
 
 /* Hover effect for the button */
 .read-more-button:hover {
-    background-color: #4a94c3;
-    transform: scale(1.1);
-    transition: transform 0.3s ease, background-color 0.3s ease;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	background-color: #4a94c3;
+	transform: scale(1.1);
+	transition: transform 0.3s ease, background-color 0.3s ease;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Animation for the transform effect */
 @keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
+	0% {
+		transform: scale(1);
+	}
 
-    50% {
-        transform: scale(1.1);
-    }
+	50% {
+		transform: scale(1.1);
+	}
 
-    100% {
-        transform: scale(1);
-    }
+	100% {
+		transform: scale(1);
+	}
 }
 
 .read-more-button:hover {
-    animation: pulse 1s infinite;
+	animation: pulse 1s infinite;
 }
 
 @media screen and (max-width: 768px) {
-    .about-column {
-        flex: 0 0 calc(50% - 20px);
-    }
+	.about-column {
+		flex: 0 0 calc(50% - 20px);
+	}
 }
 
 @media screen and (max-width: 480px) {
-    .about-column {
-        flex: 0 0 100%;
-    }
+	.about-column {
+		flex: 0 0 100%;
+	}
 }

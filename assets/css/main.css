@@ -168,6 +168,44 @@ body {
 	transition: transform 0.3s ease, background-color 0.3s ease;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
+/* foooter */
+footer {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the footer */
+footer {
+    background-color: #322f2f; 
+    color: rgb(45, 45, 47); 
+    padding: 20px;
+}
+
+/* Styling the navigation list */
+footer nav ul {
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Styling the navigation links */
+footer nav ul li {
+    display: inline;
+    margin: 0 10px; 
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: #fff;
+	color: rgba(255, 254, 255, 0.685);
+	padding: 35px 20px;
+}
+
+footer nav ul li a:hover {
+    text-transform: uppercase;
+}
+
 
 /* Animation for the transform effect */
 @keyframes pulse {
